@@ -1,0 +1,68 @@
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .6rem 0;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+.logo .line-v{
+    height: 30px;
+    width: 2px;
+    background: #858585;
+}
+.logo img{
+    height: 45px;
+}
+.logo h3{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.menu-icon{
+    height: 60px;
+    width: 60px;
+}
+.toggle {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .3s all;
+    border-radius: 50%;
+    z-index: 100;
+    background: transparent;
+}
+.toggle:hover{
+  background:  black;    
+}
+.toggle span{
+    width: 40px;
+    height: 4px;
+    background: black;
+    position: absolute;
+    transition: .4s all;
+}
+.toggle:hover span{
+    background: white;
+}
+.span-rotate{
+    transform: rotate(45deg);
+}
+.span-rotate-reverse{
+    transform: rotate(-45deg);
+}
+.span-menu{
+    transform: translateY(-10px);
+}
+.hover-animation {
+    transform: translateY(-10px); /* Adjust vertical movement as needed */
+    transition: transform 0.3s ease-in-out; /* Customize animation duration and easing */
+  }
